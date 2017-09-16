@@ -1,3 +1,41 @@
-<p>
-  video-questions works!
-</p>
+<div class="card-panel">
+    <div class="row">
+        <div class="col s12 m6">
+            <h4 class="flow-text">{{title}}</h4>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="">
+        <div class="row">
+            <div class="col s12 m4 l3 right-border">
+                <div>
+                    <div class="input-field">
+                        <input id="question" type="text" [(ngModel)]="searchValue" placeholder="{{inputPlaceholder}}" (keyup.enter)="searchSubmit()">
+                        <!--<label for="question">Vraag</label>-->
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div>
+                    <div class="row">
+                        <div class="col s12 questionList">
+                            <div class="" *ngFor="let questionItem of (questions | search:searchValue)">
+                                <a class="" (click)="setQuestion(questionItem)">{{questionItem.title}}</a>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col m8 l9">
+                <div>
+                    <h3 class="flow-text">{{questionCard.title}}</h3>
+                    <div class="divider"></div>
+                    <blockquote>{{questionCard.question}}</blockquote>
+                    <p>{{questionCard.answer}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

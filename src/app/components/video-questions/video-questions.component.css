@@ -1,0 +1,15 @@
+div.right-border {
+    border-right: 2px solid grey;
+}
+
+div.questionList {
+    height: 50vh;
+    max-height: 50vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+div.question-in-list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

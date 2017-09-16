@@ -1,6 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import {FormsModule} from '@angular/forms';
 
 import {AppComponent} from './app.component';
 import {VideoPlayerComponent} from './components/video-player/video-player.component';
@@ -9,9 +10,11 @@ import {VideoComponent} from './components/video/video.component';
 import { VideoMaterialsComponent } from './components/video-materials/video-materials.component';
 import { VideoTextComponent } from './components/video-text/video-text.component';
 import { VideoQuestionsComponent } from './components/video-questions/video-questions.component';
+import { SearchPipe } from './pipes/search.pipe';
 
 const appRoutes: Routes = [
     {path: 'video', component: VideoComponent},
+    {path: 'question', component: VideoQuestionsComponent},
     {path: '**', component: PageNotFoundComponent}
 ];
 
@@ -23,13 +26,15 @@ const appRoutes: Routes = [
         VideoComponent,
         VideoMaterialsComponent,
         VideoTextComponent,
-        VideoQuestionsComponent
+        VideoQuestionsComponent,
+        SearchPipe
     ],
     imports: [
         RouterModule.forRoot(
             appRoutes
         ),
-        BrowserModule
+        BrowserModule,
+        FormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]
