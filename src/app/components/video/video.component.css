@@ -1,0 +1,17 @@
+div.row {
+    /*margin-top: 5vh;*/
+    /*margin-bottom: 10vh;*/
+}
+
+div.parallax-title-wrapper {
+    height: 100%;
+    color: white;
+}
+
+div.parallax-title {
+    width: 100%;
+}
+
+div.parallax-container {
+    height: 30vh;
+}

@@ -1,21 +1,69 @@
-<div class="container row">
-    <!--Video player-->
-    <div class="col s12" id="video-body">
-        <app-video-player></app-video-player>
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="./assets/img/poster.jpg">
     </div>
+    <div class="row parallax-title-wrapper">
+        <div class="col s12 m6 offset-m3 center-align valign-wrapper parallax-title-wrapper">
+            <div class="parallax-title">
+                <h1 class="">Schoolgemist.nl</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="row section">
+        <!--Video player-->
+        <div class="col s12 m8">
+            <app-video-player></app-video-player>
+        </div>
 
+        <!--Material (med and up)-->
+        <div class="col s12 m4">
+            <app-video-materials></app-video-materials>
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="./assets/img/studying.jpg">
+    </div>
+    <div class="row parallax-title-wrapper">
+        <div class="col s12 m6 offset-m3 center-align valign-wrapper parallax-title-wrapper">
+            <div class="parallax-title">
+                <h1 class="">Extra uitleg</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section container">
     <!--Text-->
-    <div class="col s12 m8">
+    <div class="col s12 l6">
         <app-video-text></app-video-text>
     </div>
+</div>
 
-    <!--Material-->
-    <div class="col s12 m4">
-        <app-video-materials></app-video-materials>
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="./assets/img/question.png">
     </div>
+    <div class="row parallax-title-wrapper">
+        <div class="col s12 m6 offset-m3 center-align valign-wrapper parallax-title-wrapper">
+            <div class="parallax-title">
+                <h1 class="">Toch nog een vraag?</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section container">
 
     <!--Questions-->
-    <div class="col s12">
+    <div class="col s12 l6">
         <app-video-questions></app-video-questions>
     </div>
 </div>

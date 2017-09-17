@@ -16,6 +16,8 @@ html {
 
 body {
     background-color: whitesmoke;
+    background-image: url("./assets/img/doodles.png");
+    background-repeat: repeat;
 }
 
 .dark-primary-color    { background: #1976D2; }
@@ -26,3 +28,9 @@ body {
 .primary-text-color    { color: #212121; }
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
+
+.color-1 { background: #ff4447; }
+.color-2 { background: #4978ff; }
+.color-3 { background: #f2f2f2; }
+.color-4 { background: #0fc47a; }
+.color-5 { background: #ffdf4c; }

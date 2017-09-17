@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoMaterialsComponent implements OnInit {
 
+  materials: Material[];
+
   constructor() { }
 
   ngOnInit() {
+    this.materials = [
+        {
+            type: 'download',
+            url: './assets/downloads/pdf-sample.pdf',
+            outsource: false,
+            text: 'Oefenen met vermenigvuldigen'
+        }
+    ];
+
+
   }
 
+}
+
+interface Material {
+  type: string;
+  url: string;
+  outsource: boolean;
+  text: string;
 }

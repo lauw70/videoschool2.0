@@ -1,21 +1,14 @@
-<div class="card-content grey lighten-4" id="materials-body">
-    <div class="row">
-        <div class="col s12">
-
+<div class="materials-body">
+    <ul class="collection with-header materials-collection">
+        <li class="collection-header flow-text">Downloads</li>
+        <div *ngFor="let material of materials">
+            <a class="waves-effect waves-light collection-item" *ngIf="material.type == 'download'">
+                <i class="material-icons right">file_download</i>Oefenen
+            </a>
         </div>
 
-        <div class="col s12">
-            <ul class="collection with-header">
-                <li class="collection-header">Downloads</li>
-                <a class="waves-effect waves-light collection-item"><i class="material-icons right">file_download</i>Oefenen</a>
-                <li class="collection-header">Linkjes</li>
-                <a class="waves-effect waves-light collection-item"
-                   href="http://wijzeroverdebasisschool.nl/kennisbank-rekenen/rekenen-oefenen/cijferend-vermenigvuldigen/">Uitgebreide
-                    info</a>
-                <a class="waves-effect waves-light collection-item"
-                   href="http://wijzeroverdebasisschool.nl/kennisbank-rekenen/rekenen-oefenen/cijferend-vermenigvuldigen/">Uitgebreide
-                    info</a>
-            </ul>
-        </div>
-    </div>
+        <li class="collection-header flow-text">Linkjes</li>
+        <a class="waves-effect waves-light collection-item"
+           href="http://wijzeroverdebasisschool.nl/kennisbank-rekenen/rekenen-oefenen/cijferend-vermenigvuldigen/">Meer informatie</a>
+    </ul>
 </div>

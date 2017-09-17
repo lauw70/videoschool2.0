@@ -1,0 +1,9 @@
+ul.materials-collection {
+    max-height: 55vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+li {
+    background: transparent;
+}

@@ -13,6 +13,10 @@ import { VideoQuestionsComponent } from './components/video-questions/video-ques
 import { SearchPipe } from './pipes/search.pipe';
 
 const appRoutes: Routes = [
+    {path: '',
+        redirectTo: 'video',
+        pathMatch: 'full'
+    },
     {path: 'video', component: VideoComponent},
     {path: 'question', component: VideoQuestionsComponent},
     {path: '**', component: PageNotFoundComponent}

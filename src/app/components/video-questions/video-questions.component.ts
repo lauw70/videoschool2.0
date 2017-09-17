@@ -12,6 +12,7 @@ export class VideoQuestionsComponent implements OnInit {
     inputPlaceholder: string;
     searchValue: string;
     questionCard: Question;
+    viewingQuestion: boolean;
 
     maxQuestionsInList: number;
 
@@ -22,13 +23,15 @@ export class VideoQuestionsComponent implements OnInit {
         this.title = 'Veel gestelde vragen';
         this.inputPlaceholder = 'Vraag';
         this.maxQuestionsInList = 3;
+        this.viewingQuestion = false;
+
 
         this.questions = [
             {
                 id: 1,
                 title: 'Hoe vermenigvuldig je 2 en 3?',
                 question: 'Hoe vermenigvuldig je 2 en 3. Ik heb overal zitten zoeken. Maar ik kan het nergens vinden, Help.',
-                answer: 'Je telt drie keer het getal 2 bij elkaar op. Dan kom je uit op 6'
+                answer: 'Je telt drie keer het getal 2 bij elkaar op. Dan kom je uit op 6. Dan kom je uit op 6.Dan kom je uit op 6.Dan kom je uit op 6Je telt drie keer het getal 2 bij elkaar op. Dan kom je uit op 6. Dan kom je uit op 6.Dan kom je uit op 6.Dan kom je uit op 6Je telt drie keer het getal 2 bij elkaar op. Dan kom je uit op 6. Dan kom je uit op 6.Dan kom je uit op 6.Dan kom je uit op 6Je telt drie keer het getal 2 bij elkaar op. Dan kom je uit op 6. Dan kom je uit op 6.Dan kom je uit op 6.Dan kom je uit op 6'
             },
             {
                 id: 2,
@@ -55,6 +58,11 @@ export class VideoQuestionsComponent implements OnInit {
 
     public setQuestion(q: Question) {
         this.questionCard = q;
+        this.viewingQuestion = true;
+    }
+
+    public closeQuestionCard() {
+        this.viewingQuestion = false;
     }
 
     public searchSubmit() {

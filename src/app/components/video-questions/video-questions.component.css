@@ -1,15 +1,38 @@
-div.right-border {
-    border-right: 2px solid grey;
+div.question-card-wrapper {
+    border-left: 2px solid whitesmoke;
 }
 
 div.questionList {
-    height: 50vh;
-    max-height: 50vh;
-    overflow: hidden;
-    overflow-y: scroll;
+    /*max-height: 50vh;*/
+    /*overflow: hidden;*/
+    /*overflow-y: scroll;*/
+}
+
+div.content-wrapper {
+}
+
+div.searchList {
+    height: 100%;
+    padding: 10px;
 }
 
 div.question-in-list {
     padding-top: 10px;
     padding-bottom: 10px;
+    /*background-color: red;*/
+    border-bottom: 1px solid lightgrey;
+    height: 30%;
+    cursor: pointer;
+}
+
+div.scrollable {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: inherit;
+    /*border: 2px solid orange;*/
+    max-height: 60vh;
+}
+
+div.question-part {
+    /*max-height: 60vh;*/
 }
