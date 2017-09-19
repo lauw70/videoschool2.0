@@ -11,6 +11,10 @@ import { VideoMaterialsComponent } from './components/video-materials/video-mate
 import { VideoTextComponent } from './components/video-text/video-text.component';
 import { VideoQuestionsComponent } from './components/video-questions/video-questions.component';
 import { SearchPipe } from './pipes/search.pipe';
+import { VideoInfoComponent } from './components/video-info/video-info.component';
+import { SearchComponent } from './components/search/search.component';
+
+import { ScrollToService } from './services/scroll-to.service';
 
 const appRoutes: Routes = [
     {path: '',
@@ -31,7 +35,9 @@ const appRoutes: Routes = [
         VideoMaterialsComponent,
         VideoTextComponent,
         VideoQuestionsComponent,
-        SearchPipe
+        SearchPipe,
+        VideoInfoComponent,
+        SearchComponent
     ],
     imports: [
         RouterModule.forRoot(
@@ -40,7 +46,9 @@ const appRoutes: Routes = [
         BrowserModule,
         FormsModule
     ],
-    providers: [],
+    providers: [
+        ScrollToService
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {

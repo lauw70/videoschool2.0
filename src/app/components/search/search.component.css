@@ -1,0 +1,8 @@
+input[type="text"]
+{
+    font-size:24px;
+}
+
+span {
+    display: inline;
+}

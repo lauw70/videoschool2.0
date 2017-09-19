@@ -1,35 +1,41 @@
-<div class="parallax-container">
+<div class="parallax-container high-parallax">
     <div class="parallax">
-        <img src="./assets/img/poster.jpg">
+        <img src="./assets/img/looking-at.png">
     </div>
-    <div class="row parallax-title-wrapper">
-        <div class="col s12 m6 offset-m3 center-align valign-wrapper parallax-title-wrapper">
+    <div class="row parallax-title-wrapper animated bounceInDown">
+        <div class="col s12 m8 offset-m2 center-align valign-wrapper parallax-title-wrapper">
             <div class="parallax-title">
-                <h1 class="">Schoolgemist.nl</h1>
+                <app-search></app-search>
             </div>
         </div>
     </div>
 </div>
-<div class="section">
-    <div class="row section">
+
+<div class="section scrollspy" id="video" #video>
+    <div class="row">
         <!--Video player-->
-        <div class="col s12 m8">
+        <div class="col s12 l8 animated slideInLeft">
             <app-video-player></app-video-player>
         </div>
 
-        <!--Material (med and up)-->
-        <div class="col s12 m4">
-            <app-video-materials></app-video-materials>
+        <div class="col s12 l4 side-wrapper animated slideInRight">
+            <div class="s12" (click)="doIt()">
+                <!--Material-->
+                <app-video-materials></app-video-materials>
+            </div>
+            <div class="s12">
+                <!--Video info-->
+                <app-video-info></app-video-info>
+            </div>
         </div>
 
     </div>
 </div>
 
 
-
 <div class="parallax-container">
     <div class="parallax">
-        <img src="./assets/img/studying.jpg">
+        <img src="./assets/img/letter-book.jpg">
     </div>
     <div class="row parallax-title-wrapper">
         <div class="col s12 m6 offset-m3 center-align valign-wrapper parallax-title-wrapper">
@@ -40,9 +46,9 @@
     </div>
 </div>
 
-<div class="section container">
-    <!--Text-->
-    <div class="col s12 l6">
+<div class="section container scrollspy" id="text" #text>
+    <div class="animated slideInLeft">
+        <!--Text-->
         <app-video-text></app-video-text>
     </div>
 </div>
@@ -60,10 +66,11 @@
     </div>
 </div>
 
-<div class="section container">
+
+<div class="section container scrollspy" id="questions" #questions>
 
     <!--Questions-->
-    <div class="col s12 l6">
+    <div class="animated slideInRight">
         <app-video-questions></app-video-questions>
     </div>
 </div>

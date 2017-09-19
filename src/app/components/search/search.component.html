@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col s12 center-align">
+        <h1>
+            <span>{{Title}}</span><span *ngIf="searchTerm == ''" [ngClass]="{'hide-on-med-and-down': HideSuffix}">{{TitleSuffix}}</span> <span class="truncate hide-on-med-and-down" *ngIf="searchTerm != ''">{{searchTerm}}?</span>
+        </h1>
+    </div>
+
+    <div class="col s12 l6 offset-l3">
+        <div class="input-field">
+            <input type="text" [(ngModel)]="searchTerm" placeholder="{{searchPlaceholder}}"
+                   (keyup.enter)="searchSubmit()">
+        </div>
+    </div>
+
+    <div class="col s12 l3 hide-on-med-and-down">
+        <p class="left-align">
+            <button class="btn waves-effect white black-text" type="submit">Leg uit</button>
+        </p>
+    </div>
+</div>

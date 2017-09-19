@@ -15,3 +15,11 @@ div.parallax-title {
 div.parallax-container {
     height: 30vh;
 }
+
+div.parallax-container.high-parallax {
+    height: 50vh;
+}
+
+div.side-wrapper {
+    max-height: inherit;
+}
